@@ -1,0 +1,71 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="#882233"
+    >
+    
+    <LinearLayout android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#666666"
+    android:layout_centerVertical="true"
+    android:padding="20dp">
+    
+    <EditText android:id="@+id/movie_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/movie_title"/>
+    
+    <EditText android:id="@+id/movie_year"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/movie_year"/>
+    
+    <RatingBar android:id="@+id/movie_rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:numStars="5"
+        android:stepSize="1"
+        android:rating="3" />
+    
+    <Button android:id="@+id/btnSearch"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/btn_search"
+        android:onClick="SearchMovies"/>
+    
+    <Button android:id="@+id/btnSubmit"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/btn_submit"
+        android:onClick="SubmitMovie"/>
+    
+    </LinearLayout>
+    
+    <TextView android:id="@+id/textView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:padding="10dp" />
+    
+    <Button android:id="@+id/btnClear"
+        android:layout_below="@id/linearLayout"
+        android:layout_width="fill_parent"
+        android:layout_margin="20dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/btn_delete"
+        android:onClick="ClearTable"/>
+    
+    <ImageView android:id="@+id/img_poster"
+        android:contentDescription="@string/movie_title"
+        android:layout_width="80dp"
+        android:layout_height="110dp"
+        android:layout_margin="15dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="true"
+        android:scaleType="fitCenter"/>
+
+
+</RelativeLayout>

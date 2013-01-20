@@ -1,0 +1,13 @@
+<resources>
+
+    <string name="app_name">My Movie Database</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_enter_movies">EnterMovies</string>
+    <string name="movie_title">Movie Title</string>
+    <string name="movie_year">Movie Year (Optional)</string>
+    <string name="btn_submit">Submit</string>
+    <string name="btn_delete">Delete</string>
+    <string name="btn_search">Search</string>
+
+</resources>
